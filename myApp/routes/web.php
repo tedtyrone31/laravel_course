@@ -7,6 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 // Route::get('/about', function () {
 //     return "This is the About page";
 // })->name('about');
@@ -66,3 +67,14 @@ Route::get('/', function () {
 // });
 
 // -----------------------------------------------------
+// Route::get('/contact', function () {
+//     $title = "Contact Page";
+//     $pets = ['ginger', 'pepper', 'mikmik'];
+//     return view('contact.index', ['title' => $title, 'pets' => $pets]);
+// })->name('contact');
+
+
+Route::get('/about', function () {
+    $title = "About Page";
+    return view('about', ['title' => $title]);
+})->name('about');
